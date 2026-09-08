@@ -1,0 +1,610 @@
+/* ==========================================
+   CATALINO SOLIGUEN NATIONAL HIGH SCHOOL
+   PROFESSIONAL WEBSITE STYLES
+   ========================================== */
+
+/* ------------------------------------------
+   1. GLOBAL RESETS & BASE STYLES
+   ------------------------------------------ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+    background: #f9f6f7;
+    color: #333;
+    line-height: 1.7;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ------------------------------------------
+   2. TOP BAR
+   ------------------------------------------ */
+.top-bar {
+    background: #641323;
+    color: #fff;
+    padding: 10px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+.top-links a {
+    color: #f5d9dd;
+    margin-left: 8px;
+}
+
+.top-links a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* ------------------------------------------
+   3. HEADER & LOGO
+   ------------------------------------------ */
+header {
+    background: #fff;
+    padding: 15px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid #8f2035;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo img {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    border: 2px solid #8f2035;
+    object-fit: cover;
+}
+
+.logo-text {
+    color: #641323;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+/* ------------------------------------------
+   4. NAVIGATION — UNIFORM BUTTONS
+   ------------------------------------------ */
+nav {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    padding: 12px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #641323;
+    border-radius: 6px;
+    transition: all 0.25s ease;
+    white-space: nowrap;
+}
+
+nav a:hover {
+    background: #f8e6e9;
+    color: #641323;
+}
+
+nav a.active {
+    background: #8f2035;
+    color: #fff;
+}
+
+nav a.active:hover {
+    background: #641323;
+}
+
+/* ------------------------------------------
+   5. HOME HERO SECTION
+   ------------------------------------------ */
+.hero {
+    background: linear-gradient(rgba(75, 8, 23, 0.78), rgba(75, 8, 23, 0.78)), url("school.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 100px 7%;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-content {
+    max-width: 900px;
+}
+
+.hero-small {
+    font-size: 18px;
+    letter-spacing: 4px;
+    color: #fcdde1;
+    margin-bottom: 12px;
+}
+
+.hero h2 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+
+.hero-text {
+    font-size: 17px;
+    color: #f8eef0;
+    margin-bottom: 35px;
+}
+
+.hero-buttons a {
+    display: inline-block;
+    padding: 14px 32px;
+    background: #fff;
+    color: #8f2035;
+    font-weight: 700;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.hero-buttons a:hover {
+    background: #f8e6e9;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+/* ------------------------------------------
+   6. PAGE BANNER — ALL PAGES IDENTICAL
+   ------------------------------------------ */
+.page-banner {
+    background: #8f2035;
+    color: #fff;
+    padding: 60px 20px;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.page-banner h1 {
+    font-size: 44px;
+    margin-bottom: 8px;
+}
+
+.page-banner h2 {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.page-banner p {
+    font-size: 17px;
+    color: #fce8eb;
+}
+
+/* ------------------------------------------
+   7. PAGE CONTENT CONTAINER
+   ------------------------------------------ */
+.page-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 30px;
+}
+
+/* ------------------------------------------
+   8. CARDS — UNIFORM STYLE
+   ------------------------------------------ */
+.card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    border-top: 5px solid #8f2035;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.10);
+}
+
+.card h3 {
+    color: #641323;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.card h5 {
+    color: #888;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #555;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+/* ------------------------------------------
+   9. GRID LAYOUTS
+   ------------------------------------------ */
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+/* ------------------------------------------
+   10. STUDENTS PAGE
+   ------------------------------------------ */
+.program-card {
+    background: #fff;
+    padding: 40px 25px;
+    border-radius: 12px;
+    text-align: center;
+    border-top: 5px solid #8f2035;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+    transition: all 0.3s ease;
+}
+
+.program-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 14px 32px rgba(0,0,0,0.10);
+}
+
+.program-icon {
+    width: 80px;
+    height: 80px;
+    background: #f8e6e9;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    margin: 0 auto 20px;
+}
+
+.program-card h3 {
+    color: #641323;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.program-card p {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+/* ------------------------------------------
+   11. ABOUT PAGE
+   ------------------------------------------ */
+.about-intro {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 50px;
+}
+
+.about-intro h2 {
+    color: #641323;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.about-intro p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.8;
+}
+
+.about-card .about-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.values-section {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.values-section h2 {
+    color: #641323;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.values {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.values span {
+    background: #8f2035;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.25s ease;
+}
+
+.values span:hover {
+    background: #641323;
+    transform: translateY(-3px);
+}
+
+/* ------------------------------------------
+   12. CONTACT PAGE
+   ------------------------------------------ */
+.contact-info h2,
+.contact-form h2 {
+    color: #641323;
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+.contact-item {
+    padding: 18px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.contact-item:last-child {
+    border-bottom: none;
+}
+
+.contact-item strong {
+    display: block;
+    color: #641323;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.contact-item p {
+    color: #555;
+}
+
+.contact-form form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.contact-form label {
+    color: #444;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 15px;
+    outline: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #8f2035;
+    box-shadow: 0 0 0 3px #f8e6e9;
+}
+
+.contact-form textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.full-width {
+    grid-column: 1 / -1;
+}
+
+.contact-form button {
+    grid-column: 1 / -1;
+    padding: 14px;
+    background: #8f2035;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.contact-form button:hover {
+    background: #641323;
+    transform: translateY(-2px);
+}
+
+/* ------------------------------------------
+   13. MAP SECTION
+   ------------------------------------------ */
+.map-section {
+    max-width: 1200px;
+    margin: 0 auto 60px;
+    padding: 0 30px;
+}
+
+.map-section h2 {
+    color: #641323;
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.map-placeholder {
+    min-height: 250px;
+    background: #f1f1f1;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #8f2035;
+    font-size: 40px;
+}
+
+.map-placeholder p {
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 8px;
+}
+
+.map-placeholder small {
+    font-size: 13px;
+    color: #777;
+}
+
+/* ------------------------------------------
+   14. GALLERY PAGE
+   ------------------------------------------ */
+.gallery-page h2 {
+    text-align: center;
+    color: #641323;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.gallery-page h3 {
+    text-align: center;
+    color: #641323;
+    font-size: 20px;
+    margin: 40px 0 20px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.gallery-item {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+/* ------------------------------------------
+   15. FOOTER
+   ------------------------------------------ */
+footer {
+    background: #641323;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+footer h2 {
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+footer p {
+    color: #f8e6e9;
+    font-size: 15px;
+}
+
+footer hr {
+    max-width: 800px;
+    margin: 20px auto;
+    border: none;
+    border-top: 1px solid #994455;
+}
+
+footer .copyright {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* ------------------------------------------
+   16. RESPONSIVE DESIGN
+   ------------------------------------------ */
+@media (max-width: 1000px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+    }
+    .grid-3, .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .grid-2 {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 650px) {
+    .top-bar {
+        flex-direction: column;
+        gap: 5px;
+        text-align: center;
+    }
+    .hero h2 {
+        font-size: 30px;
+    }
+    .page-banner h1 {
+        font-size: 30px;
+    }
+    .grid-3, .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+    .contact-form form {
+        grid-template-columns: 1fr;
+    }
+    nav a {
+        padding: 10px 14px;
+        font-size: 13px;
+    }
+}
